@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/activity_video_talk"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/video_contacts_name"
+        android:textSize="50sp"/>
+    <SurfaceView
+        android:visibility="visible"
+        android:layout_height="371dp"
+        android:layout_width="match_parent"
+        android:id="@+id/yourVideo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"  />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:id="@+id/video_drop"
+            android:background="@drawable/drop"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:id="@+id/video_accept"
+            android:background="@drawable/accept"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+        <SurfaceView
+            android:id="@+id/myVideo"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" />
+    </LinearLayout>
+</LinearLayout>
